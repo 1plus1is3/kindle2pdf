@@ -104,5 +104,5 @@ class Capture:
             mask = cv2.absdiff(img_prev, img_current)
             mask_gray = cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
             # Stop screenshot if max_page is reached or the difference is zero
-            if page == 3000 or not cv2.countNonZero(mask_gray):
+            if page == max_page or not cv2.countNonZero(mask_gray):
                 break

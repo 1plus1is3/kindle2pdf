@@ -1,0 +1,4 @@
+Pillow
+img2pdf
+opencv-python
+pyautogui
